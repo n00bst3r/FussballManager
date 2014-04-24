@@ -1,5 +1,7 @@
 package de.danielrajic.model;
 
+import java.util.Random;
+
 public class Player {
 	public static int createdPlayers; //class variable for counting createdPlayers and define clearly IDs for each player. 
 	
@@ -64,5 +66,21 @@ public class Player {
 		this.playerID = playerID;
 	}
 	
+	/*
+	 * Object Methods below: 
+	 */
+	/**
+	 * Method for adding goals to a player. 
+	 */
+	public void addGoal(){
+		goals++;
+	}
 	
+	public int shootsGoal(){
+		Random r = new Random();
+		// Shooting quality can vary [+1,0,−1 ,−2}
+	    //  afterwards the limits of the intervalls will be checked again. 
+		int ret = Math.max(1, Math.min(10, shootingPower + r.nextInt(4)-2));
+		return ret;
+	}
 }
