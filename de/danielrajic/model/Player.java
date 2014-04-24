@@ -2,7 +2,7 @@ package de.danielrajic.model;
 
 import java.util.Random;
 
-public class Player {
+public class Player extends Person {
 	public static int createdPlayers; //class variable for counting createdPlayers and define clearly IDs for each player. 
 	
 	private int strength;   //Value between 1 and 10 
@@ -19,7 +19,8 @@ public class Player {
      * 
      * Constructor for the Player class
      */
-	public Player(int strength, int shootingPower, int motivation, int goals){
+	public Player(String name, int age, int strength, int shootingPower, int motivation, int goals){
+		super(name, age);
 		setStrength(strength);
 		setShootingPower(shootingPower);
 		setMotivation(motivation);
