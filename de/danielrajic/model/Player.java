@@ -19,12 +19,12 @@ public class Player extends Person {
      * 
      * Constructor for the Player class
      */
-	public Player(String name, int age, int strength, int shootingPower, int motivation, int goals){
+	public Player(String name, int age, int strength, int shootingPower, int motivation){
 		super(name, age);
 		setStrength(strength);
 		setShootingPower(shootingPower);
 		setMotivation(motivation);
-		setGoals(goals);
+		setGoals(0);
 		createdPlayers++;
 		setPlayerID(createdPlayers);
 	
