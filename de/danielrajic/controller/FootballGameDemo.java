@@ -6,7 +6,11 @@ import de.danielrajic.model.MatchLeagueModus;
 import de.danielrajic.model.Player;
 import de.danielrajic.model.Team;
 
-
+/**
+ * 
+ * @author Daniel Class for Displaying and initializing 
+ *
+ */
 
 public class FootballGameDemo {
 
