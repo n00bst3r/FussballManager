@@ -3,6 +3,7 @@ package de.danielrajic.model;
 public class Coach extends Person {
 	
 	private int experience;
+	private Position position;
 	/**
 	 * 
 	 * @param name
@@ -11,9 +12,10 @@ public class Coach extends Person {
 	 * 
 	 * Constructor of the Coach class, that extends the Person class.
 	 */
-	public Coach(String name, int age, int experience){
+	public Coach(String name, int age, int experience, Position pos){
 		super(name,age);
 		setExperience(experience);
+		setPosition(pos);
 		
 	}
 	
@@ -27,6 +29,14 @@ public class Coach extends Person {
 
 	public void setExperience(int experience) {
 		this.experience = experience;
+	}
+
+	public Position getPosition() {
+		return position;
+	}
+
+	public void setPosition(Position position) {
+		this.position = position;
 	}
 	
 	

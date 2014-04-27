@@ -10,6 +10,7 @@ public class Player extends Person {
 	private int motivation; // value between 1 and 10 
 	private int goals; // number of goals
 	private int playerID; //clearly number for every created player.
+	private Position position;
     /**
      * 
      * @param strength
@@ -19,7 +20,7 @@ public class Player extends Person {
      * 
      * Constructor for the Player class
      */
-	public Player(String name, int age, int strength, int shootingPower, int motivation){
+	public Player(String name, int age, int strength, int shootingPower, int motivation, Position pos){
 		super(name, age);
 		setStrength(strength);
 		setShootingPower(shootingPower);
@@ -27,6 +28,7 @@ public class Player extends Person {
 		setGoals(0);
 		createdPlayers++;
 		setPlayerID(createdPlayers);
+		setPosition(pos);
 	
 	}
 	
@@ -67,6 +69,14 @@ public class Player extends Person {
 		this.playerID = playerID;
 	}
 	
+	public Position getPosition() {
+		return position;
+	}
+
+	public void setPosition(Position position) {
+		this.position = position;
+	}
+
 	/*
 	 * Object Methods below: 
 	 */

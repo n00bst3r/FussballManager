@@ -6,6 +6,6 @@ package de.danielrajic.model;
  *
  */
 public enum Position {
-	STURM, MITTELFELD, ABWEHR, TOR
+	STURM, MITTELFELD, ABWEHR, TOR, COACH
 
 }
