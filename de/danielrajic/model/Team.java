@@ -8,7 +8,7 @@ public class Team {
 	private Goalkeeper keeper;
 	private Player[] squad;
 	private boolean next;
-	
+
 	public Team(String teamName, Coach coach, Goalkeeper keeper, Player[] squad){
 		
 		setName(teamName);
