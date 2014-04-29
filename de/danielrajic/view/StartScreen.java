@@ -4,7 +4,6 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URL;
-
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.Icon;
@@ -32,7 +31,7 @@ public class StartScreen {
 	public void intitialize(){
 		frame = new JFrame("JFuﬂballmanager v1.0");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(900, 620);
+		frame.setSize(700, 620);
 		frame.setLocationRelativeTo(null);
 		//Backgroundpanel: 
 		backgroundPanel = new JPanel();
