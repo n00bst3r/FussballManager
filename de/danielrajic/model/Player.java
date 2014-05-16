@@ -20,8 +20,8 @@ public class Player extends Person {
      * 
      * Constructor for the Player class
      */
-	public Player(String name, int age, int strength, int shootingPower, int motivation, Position pos){
-		super(name, age);
+	public Player(String name,int year, int month, int dayOfMonth, int strength, int shootingPower, int motivation, Position pos){
+		super(name, year, month,  dayOfMonth );
 		setStrength(strength);
 		setShootingPower(shootingPower);
 		setMotivation(motivation);
@@ -29,7 +29,7 @@ public class Player extends Person {
 		createdPlayers++;
 		setPlayerID(createdPlayers);
 		setPosition(pos);
-	
+		//TODO Age behandeln
 	}
 	
 	/*

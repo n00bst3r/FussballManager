@@ -1,9 +1,11 @@
 package de.danielrajic.view;
 
 import java.awt.FlowLayout;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URL;
+
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.Icon;
@@ -12,6 +14,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
+
 /**
  * 
  * @author Daniel 
@@ -31,6 +35,7 @@ public class StartScreen {
 	public void intitialize(){
 		frame = new JFrame("JFußballmanager v1.0");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(StartScreen.class.getResource("/de/danielrajic/images/frame_icon.png")));
 		frame.setSize(700, 620);
 		frame.setLocationRelativeTo(null);
 		//Backgroundpanel: 
@@ -72,7 +77,7 @@ public class StartScreen {
 		public void actionPerformed(ActionEvent e){
 			if(e.getActionCommand()=="start"){
 				frame.dispose();
-				// TODO Objekt von Hauptmenü erstellen. 
+				StartMenu startMenu = new StartMenu(); 
 			}
 			
 		}

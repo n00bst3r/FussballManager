@@ -12,8 +12,8 @@ public class Coach extends Person {
 	 * 
 	 * Constructor of the Coach class, that extends the Person class.
 	 */
-	public Coach(String name, int age, int experience, Position pos){
-		super(name,age);
+	public Coach(String name, int year, int month, int dayOfMonth, int experience, Position pos){
+		super(name,year,month,dayOfMonth);
 		setExperience(experience);
 		setPosition(pos);
 		
