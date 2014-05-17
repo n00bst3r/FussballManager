@@ -50,4 +50,13 @@ public class Game {
 		return id;
 	}
 
+
+	@Override
+	public String toString() {
+		return "Game [actualDate=" + actualDate + ", user=" + user
+				+ ", gameName=" + gameName + ", id=" + id + "]";
+	}
+	
+	
+
 }
