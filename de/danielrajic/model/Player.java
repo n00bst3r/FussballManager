@@ -11,6 +11,7 @@ public class Player extends Person {
 	private int goals; // number of goals
 	private int playerID; //clearly number for every created player.
 	private Position position;
+	private int jerseyNo;
     /**
      * 
      * @param strength
@@ -20,7 +21,7 @@ public class Player extends Person {
      * 
      * Constructor for the Player class
      */
-	public Player(String name,int year, int month, int dayOfMonth, int strength, int shootingPower, int motivation, Position pos){
+	public Player(String name,int year, int month, int dayOfMonth, int strength, int shootingPower, int motivation, Position pos, int jerseyNo){
 		super(name, year, month,  dayOfMonth );
 		setStrength(strength);
 		setShootingPower(shootingPower);
@@ -29,6 +30,7 @@ public class Player extends Person {
 		createdPlayers++;
 		setPlayerID(createdPlayers);
 		setPosition(pos);
+		setJerseyNo(jerseyNo);
 		//TODO Age behandeln
 	}
 	
@@ -75,6 +77,16 @@ public class Player extends Person {
 
 	public void setPosition(Position position) {
 		this.position = position;
+	}
+	
+	
+
+	public int getJerseyNo() {
+		return jerseyNo;
+	}
+
+	public void setJerseyNo(int jerseyNo) {
+		this.jerseyNo = jerseyNo;
 	}
 
 	/*

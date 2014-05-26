@@ -16,8 +16,8 @@ public class Goalkeeper extends Player {
 	 * 
 	 * Constructor for the Goalkeeper class, that extends the Player class
 	 */
-	public Goalkeeper(String name, int year, int month, int dayOfMonth, int strength, int shootingPower, int motivation, int goals, int reaction, Position pos){
-		super(name, year, month, dayOfMonth, strength, shootingPower, motivation, pos); //TODO Age verarbeiten
+	public Goalkeeper(String name, int year, int month, int dayOfMonth, int strength, int shootingPower, int motivation, int goals, int reaction, Position pos, int jerseyNo){
+		super(name, year, month, dayOfMonth, strength, shootingPower, motivation, pos, jerseyNo); //TODO Age verarbeiten
 		setReaction(reaction);
 		
 	}
